@@ -15,14 +15,14 @@
 	<style>
 		   body 
 		   		{
-		   		background-image:url('imagenes/fondo-negro.jpg');
+		   		background-image:url('imagenes/fondo/oscuro.png');
 	 	   		}
 			#todo 
 				  {
-				 width:1340px;
-				 height:3120px;		
-     			 position:absolute;
-				 text-align:center;
+				 width:920px;
+				 height:3120px;
+				  margin:0 auto;
+				 
 				 }
 			#logo 
 				  {
@@ -38,7 +38,7 @@
 			
 	/*menu*/
 	
-			#b1{float:left;}
+			#b1{float:left; }
 			#b2{float:left;}
 			#b3{float:left;}
 			#b4{float:left;}
@@ -52,28 +52,32 @@
 					 /*imagenes*/
 					 #imagenes{width:920px;height:350px;
 					 													 }
-        					#i1{float:left;margin-right:10px;}
-        					#i4{float:left; }
+        					#i1{float:left;margin-right:10px; background-image:url('imagenes/iOS8.jpg'); width:300px;height:350px;}
+        					#i4{float:left;background-image:url('imagenes/funda-iphone2.jpg');width:300px;height:350px;}
         					#medio {width:300px;height:350px;float:left;margin-right:10px;}
-        					#i2{float:left;margin-bottom:5px;}
-        					#i3{float:left;}
+        					#i2{float:left;margin-bottom:5px; background-image:url('imagenes/androidVSios.jpg'); width:300px; height:170px;}
+        					#i3{float:left;background-image:url('imagenes/Motorola2.jpg');width:300px; height:170px;}
 		
 		/*titulos*/
 		
 					
 		/*informacion*/
-					   #text{float:left;background-color:#7A7A7A; width:1340px; height:70px;margin-top:10px; }
+					   #text{float:left;background-color:#7A7A7A; width:920px; height:70px;margin-top:10px; }
 		
-					   #principal {
-					   			  width:1340px;
+					   #principalfondo {
+					   			  width:920px;
 								  height:1350px;
 					   			  background-color:#FFFFFF;
 								  background-image:url('imagenes/fondo/blanco.png');
 								  float:left;
 								  margin-top:0px;
-								  						  
-								  
-					   			   }
+								   }
+								   
+						/*cuerpo*/
+						#cuerpo { text-align:center; 
+								width:940px; 
+								height:1350px;
+								}
 								   
 								   
 					   /*cuadro1*/
@@ -111,16 +115,52 @@
 				#txt {font-family:antipasto;
 				color:#FFFFFF; }
 				
+				
+				
 			/*aplicaciones*/	
 			
-			#text{ float:left;background-color:#7A7A7A; width:1340px; height:70px;margin-top:0px;}
 			
-				#app1{ float:left;margin-top:10px;margin-left:10px;margin-right:20px;}
-				#app2{ float:left;margin-top:10px;}
-				#app3{float:left;margin-left:10px;margin-right:20px;margin-top:10px;}
-				#app4{ float:left;margin-top:10px;}
+			
+			#text{margin-left:0px;float:left;}
+			
+			
+				#app1{ float:left;
+					   margin-top:10px;
+					   margin-left:10px;
+					   margin-right:20px;
+					   background-image:url('imagenes/apps/eltiempo.jpg');
+					   width:440px; 
+					   height:250px;}
+					   
+					   
+				#app2{ float:left;
+					   margin-top:10px;
+					   background-image:url('imagenes/apps/threes.jpg');
+					   width:440px; 
+					   height:250px;}
+					   
+					   
+				#app3{ 	float:left;
+        				margin-left:10px;
+        				margin-right:20px;
+        				margin-top:10px;
+        				background-image:url('imagenes/apps/Flipagram.jpg');
+        				width:440px; 
+        				height:250px;}
+
+   				#app4{ float:left;
+   					   margin-top:10px;
+   					   background-image:url('imagenes/apps/MetroMail.jpg');
+   					   width:440px; 
+   					   height:250px;}
 				
+			#textapp{color:white; background-color:black; margin-top:200px;}
 			
+			#textimg{color:white; background-color:black;font-size:18px;margin-top:306px;}
+			
+			#textimgM{ color:white; background-color:black;font-size:18px;margin-top:130px;}
+			
+			a{text-decoration:none; }
 				
 	</style>
 	
@@ -129,10 +169,10 @@
   
   <body>
   
-  <div id="todo" class="todo">
+  <div id="todo" >
   
   
-  		<div id="logo"> <img src="imagenes/PHONE_NEWS.jpg" width="460" height="150"></div>
+  		<div id="logo"> <img src="imagenes/logo.jpg" width="460" height="150"></div>
 		<div id="PN">PhoneNews.com</div>
 		
 
@@ -146,17 +186,25 @@
 		<div id="b8"><img src="imagenes/menu-botones/Motorola.png" width="100" height="40"></div>
 		
 		<div id="imagenes">
-			<div id="i1"><img src="imagenes/iOS8.jpg" width="300" height="350"></div>
-				 <div id="medio">  
-				 	  <div id="i2"><img src="imagenes/androidVSios.jpg" width="300" height="170"></div>
-				 	  <div id="i3"><img src="imagenes/motorola2.jpg" width="300" height="170"></div>	
-				 </div>		
-			<div id="i4"><img src="imagenes/funda-iphone2.jpg" width="300" height="350"></div>	
+			<div id="i1"><div><a href="http://www.celularis.com/apple/significado-ios-8/?utm_source=celularis&utm_medium=social&utm_campaign=Perfiles_Sociales"><h1 id="textimg">iOS 8, las deudas resueltas de Apple.</h1></a></div></div>
+			<div id="medio">  
+				 <div id="i2"><div><a href="http://imapas.net/2014/05/25/que-puede-aprender-ios-de-android-y-viceversa/"><h1 id="textimgM">¿Qué puede aprender iOS de Android, y viceversa?</h1></a></div></div>
+				 <div id="i3"><div><a href="http://www.movilzona.es/2014/05/25/motorola-prepara-un-moto-x-con-64-gb-de-memoria-interna/"><h1 id="textimgM">Motorola prepara un Moto X con 64 GB de memoria interna.</h1></a></div></div>	
+			</div>		
+			<div id="i4"><div><a href="http://www.esferaiphone.com/iphone/lunecase-una-carcasa-con-notificaciones-traseras-para-el-iphone/"><h1 id="textimg">Lunecase, la funda para iPhone que funciona por electromagnetismo.</h1></a></div></div>	
   		</div>
 		
-		<div id="text"><h1 id="txt">Noticias</h1></div>
 		
-	<div id="principal">
+		
+		
+			 <div id="text"><h1 id="txt">&nbsp&nbsp Noticias</h1></div>
+		
+		
+		
+		
+	<div id="principalfondo">
+	
+	<div id="cuerpo">
 		
 		<div id="c1">
 			<br />
@@ -254,20 +302,36 @@
     			  
     			  <img src="imagenes/Smarthphone-juegos.jpg" width="200" height="200">
     			  <h4>Los 10 mejores juegos para Android 2014, hasta ahora.</h4>
+				  
+				 
 		
 			  </div>
 		
+		
+		</div>
+		
 		</div>	
 		
-		<div id="text"><h1 id="txt">Apps más utilizadas</h1></div>	
 		
-		<div id="app1"><img src="imagenes/apps/eltiempo.jpg" width="440" height="250"></div>		
-		<div id="app2"><img src="imagenes/apps/threes.jpg" width="440" height="250"></div>	
-		<div id="app3"><img src="imagenes/apps/Flipagram.jpg" width="440" height="250"></div>	
-		<div id="app4"><img src="imagenes/apps/MetroMail.jpg" width="440" height="250"></div>	
+		
+			 <div id="text"><h1 id="txt">&nbsp&nbspApps más utilizadas</h1></div>
+
+		
+		
+		
+		<div id="app1"><div><a href="http://www.eltiempo.es/app-windows-eltiempo.html"><h1 id="textapp">El tiempo(Windows Phone)</h1></a></div></div>		
+		<div id="app2"><div><a href="http://android.mob.org/game/threes.html"><h1 id="textapp">&nbsp Threes(Android)</h1></a></div></div>	
+		<div id="app3"><div><a href="http://flipagram.com/"><h1 id="textapp">&nbsp Flipagram (iOS, Android)</h1></a></div></div>	
+		<div id="app4"><div><a href="http://www.windowsphone.com/es-pe/store/app/metromail/e2505360-4142-4d85-8ab7-b77d6ea728a0"><h1 id="textapp">&nbsp MetroMail (Windows Phone)</h1></a></div></div>	
+		
+		
 			
 			
-		<div id="text"><h1 id="txt">Videos</h1></div>		 
+			
+		<div id="text"><h1 id="txt">&nbsp&nbspVideos</h1></div>		
+		
+		 
+	
   </div>	
   </body>
 </html>

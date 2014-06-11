@@ -6,7 +6,7 @@
     <meta name="dcterms.created" content="lun, 09 jun 2014 22:11:42 GMT">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <title></title>
+    <title>PhoneNews-SAMSUNG</title>
     
     <!--[if IE]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -16,7 +16,7 @@
 	
 	body {background-image:url('imagenes/fondo/oscuro.png');}
 	
-	#todo     { width:940px;
+	#todo     { width:920px;
 		   	  	height:3120px;
 		   	  	margin:0 auto; }
 		   
@@ -43,23 +43,42 @@
 			#b8{ float:left;}
 	
 	/*titulo*/
-			  #titulo{color:white;margin-left:10px;
-			  float:left;width:920px;height:70px;background-color:#7A7A7A;}
+			  #titulo{color:white;
+			  		  margin-left:10px;
+			  		  float:left;
+					  width:920px;
+					  height:70px;
+					  background-color:#7A7A7A;}
+			  
+			  #titulo2{ color:white;
+			  			float:left;
+						width:920px;
+						height:70px;
+						background-color:#7A7A7A;
+						margin-top:10px;}
 			  
 			  h1{font-family:'Antipasto'; font-size:35px;}
 	/*imagenes*/
 				#imagenes{float:left; }
-				#s1-s2{float:left;}
-				#s1{ }
-				#s2{ float:left;}
-				#s3{ float:left;}
+				#s1-s2{float:left;width:410px;}
+				#s1{background-image:url('imagenes/Samsung/S1.jpg'); width:410px ;height:210px; float:left;}
+				#s2{ float:left; background-image:url('imagenes/Samsung/S2.jpg');width:410px; height:210px;}
+				#s3{ float:left;background-image:url('imagenes/Samsung/S3.jpg'); width:510px; height:420px;>}
 				
+		
+		/*link*/
+				
+				
+				#linktxt{color:white;font-family:'antipasto';font-size:20px;margin-left:10px;float:left;margin-top:auto;}
+				
+				#link{background-color:black;width:410px;height:50px;float:left;margin-top:160px;}
+				#link2{background-color:black;width:510px;height:50px;float:left;margin-top:370px; }
 	/*informacion*/
 	
 				   #cuerpo{		width:920px; 
-								height:1750px;
-								background-color:white;
-								background-image:url('imagenes/fondo/blanco.png');
+								height:1770px;
+								background-color:#C5C5C5;
+								background-image:url('imagenes/fondo/textura1.png');
 								float:left;
 								margin-left:10px;
 								}
@@ -68,7 +87,7 @@
 				   h2{font-size:20px;color:black;font-family:'antipasto';}
 				   P{color:black;font-family:'verdana'; }
 				   #txt{float:left; width:300px;}
-				   #img{float:left;margin-top:30px;}
+				   #img{float:left;margin-top:30px;margin-left:10px;}
 				   #text{float:left;width:500px;height:200px;margin-top:20px;margin-left:10px;text-align:justify;}
 	
 	
@@ -80,6 +99,54 @@
 				   
 				 
 				   #division{float:left; width:920px;height:5px;background-color:#6F6F6F;margin-top:25px;}
+				   
+				   /*LO MAS LEIDO*/
+				   
+				   #L {color:white;text-align:justify; width:300px;}
+				   #LIMG{ height:250px;width:300px;float:left;;margin-top:10px;}
+				   #LIMG3{ height:250px;width:300px;float:left;;margin-top:10px; margin-left:10px;}
+				   #LIMG2{height:250px;width:300px;float:left;margin-top:10px;margin-left:10px; }
+				   
+				   
+				   
+				   
+				   
+	 /*indice*/
+		
+		#indice{width:940px;height:300px;}
+		
+		#flecha{float:left; }
+		#flechaimg{float:left; width:50px; height:50px;margin-top:15px;}
+		#letrai{float:left;width:150px; }
+		
+		
+			#ind1{float:left; width:210px;height:50px;margin-right:20px;}
+			#ind2{float:left; width:210px;height:50px;margin-right:30px;}
+			#ind3{float:left; width:210px;height:50px;margin-right:20px;}
+			#ind4{float:left; width:210px;height:50px;margin-right:10px;}
+			#ind5{float:left; width:210px;height:50px;margin-right:20px;}
+			#ind6{float:left; width:210px;height:50px;margin-right:30px;}
+			#ind7{float:left; width:210px;height:50px;margin-right:100px;}
+					
+				
+				
+		#indice2{margin-bottom:100px;
+				 float:left;
+				 margin-top:40px;
+				 margin-left:150px;
+				 }
+		
+		#indtxt{float:left;
+				margin-right:40px;
+				font-family:'verdana';
+				font-size:16px;
+				color:white;}
+				   
+		#indicetxt{font-family:'antipasto';
+				text-align:left;
+				color:#626262;
+font-size:32px;}   
+				   
 	</style>
 		
   </head>
@@ -107,11 +174,11 @@
 	<div id="cuerpo">	
 	
     		<div id="s1-s2">
-    			 <div id="s1"><img src="imagenes/Samsung/S1.jpg" width="410" height="210"></div>
-    			 <div id="s2"><img src="imagenes/Samsung/S2.jpg" width="410" height="200"></div>
+    			 <div id="s1"><div id="link"><h2 id="linktxt">Filtradas imágenes del Galaxy F, la versión  premium del Galaxy S5.</h2></div></div>
+    			 <div id="s2"><div id="link"><h2 id="linktxt">Motivos para escoger el Galaxy S5</h2></div></div>
     		</div>
     		
-    		<div id="s3"><img src="imagenes/Samsung/S3.jpg" width="510" height="410"></div>
+    		<div id="s3"><div id="link2"><h2 id="linktxt">Encuesta a ciegas: vota por tus fotos preferidas, las del One M8 o del Galaxy S5</h2></div></div>
 	
 	
 	
@@ -184,7 +251,86 @@
 		
 		
 		
+	
+	
+	
+	
+        	<div id="titulo2"><h1>&nbsp LO MÁS LEÍDO</h1></div>
+        	
+        	
+        	<div id="LIMG"><img src="imagenes/Samsung/L1.jpg" width="300" height="150">
+        	<div><h2 id="L">Los 5 juegos más difíciles para Android</h2></div></div>
+        	
+        	<div id="LIMG3"><img src="imagenes/Samsung/L2.jpg" width="300" height="150">
+        	<div><h2 id="L">Nokia Superman sería el primer dispositivo de Microsoft y estaría enfocado en selfies</h2></div></div>
+        	
+        	<div id="LIMG2"><img src="imagenes/Samsung/L3.jpeg" width="300" height="150">
+        	<div><h2 id="L">Nokia presenta el Lumia 930: vuelve el metal</h2></div></div>
+        	
+        	<div id="LIMG"><img src="imagenes/Samsung/L4.jpg" width="300" height="150">
+        	<div><h2 id="L">BlackBerry anuncia la nueva BlackBerry Q20</h2></div></div>
+        	
+        	<div id="LIMG3"><img src="imagenes/Samsung/L5.jpg" width="300" height="150">
+        	<div><h2 id="L">Ya es oficial: HTC One Mini 2, mismo diseño que M8 y cámara de 13 megapíxeles</h2></div></div>
+        	
+        	<div id="LIMG2"><img src="imagenes/Samsung/L6.jpg" width="300" height="150">
+        	<div><h2 id="L">10 juegos para Android tan buenos que no parecen gratuitos</h2></div></div>
+	
+	
+	<div id="division"></div>
+	
+	<div id="indice">
+			 
+			 <div id="ind1">
+			 	  <div id="letrai"><h1 id="indicetxt">HOME</h1></div>
+			 	  <div id="flecha"><img src="imagenes/menu-botones/flecha.png" id="flechaimg"></div>
+			 </div>
+			 
+			 <div id="ind2">
+			 	  <div id="letrai"><h1 id="indicetxt">SAMSUNG</h1></div>
+				  <div id="flecha"><img src="imagenes/menu-botones/flecha.png" id="flechaimg"></div>
+			 </div>
+			 
+			 <div id="ind3">
+			 	  <div id="letrai"><h1 id="indicetxt">APPLE</h1></div>
+				  <div id="flecha"><img src="imagenes/menu-botones/flecha.png" id="flechaimg"></div>
+			 </div>
+			 
+			 <div id="ind4">
+        	 	  <div id="letrai"><h1 id="indicetxt">BLACKBERRY</h1></div>
+				  <div id="flecha"><img src="imagenes/menu-botones/flecha.png" id="flechaimg"></div>
+			 </div>
+			 
+			 <div id="ind5">
+			 	  <div id="letrai"><h1 id="indicetxt">NOKIA</h1></div>
+				  <div id="flecha"><img src="imagenes/menu-botones/flecha.png" id="flechaimg" ></div>
+			 </div>
+			
+			 <div id="ind6">
+			 	  <div id="letrai"><h1 id="indicetxt"">HTC</h1></div>
+				  <div id="flecha"><img src="imagenes/menu-botones/flecha.png" id="flechaimg"></div>
+			 </div>
+			 
+			 <div id="ind7">			   
+			 	  <div id="letrai"><h1 id="indicetxt">MOTOROLA</h1></div>
+				  <div id="flecha"><img src="imagenes/menu-botones/flecha.png" id="flechaimg"></div>
+			 </div>
+			 
+			 
+			 <div id="indice2"><h2 id="indtxt">Preguntas Frecuentes</h2>
+			 	  <h2 id="indtxt">Lo más buscado</h2>
+				  <h2 id="indtxt">Contacto</h2>
+				  <img src="imagenes/menu-botones/Logo FB.png" width="40" height="40">
+				  <img src="imagenes/menu-botones/Logo twitter.png" width="40" height="40">
+			</div>
+			 
+		</div>	
+		
+	
+	
+	
 	</div>	
+	
 	
 	
 	

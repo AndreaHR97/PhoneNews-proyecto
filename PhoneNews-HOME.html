@@ -30,10 +30,10 @@
 				   
 			#PN {
 				color:#FFFFFF;
-				font-size:70px;
+				font-size:60px;
 				font-family:'Antipasto';
 				margin-bottom:90px;
-				margin-top:10px;	
+				margin-top:20px;	
 				float:left;
 
 				 }
@@ -49,16 +49,17 @@
 			#b7{float:left;}
 			#b8{ float:left;}
 			
+			#imgmenu{width:940px; }
+			
 			
 		/*principal*/
 					 /*imagenes*/
-					 #imagenes{width:920px;height:350px;
-					 													 }
+					 #imagenes{width:920px;height:350px; }
         					#i1{float:left;margin-right:10px; background-image:url('imagenes/iOS8.jpg'); width:300px;height:350px;}
         					#i4{float:left;background-image:url('imagenes/funda-iphone2.jpg');width:300px;height:350px;}
         					#medio {width:300px;height:350px;float:left;margin-right:10px;}
         					#i2{float:left;margin-bottom:5px; background-image:url('imagenes/androidVSios.jpg'); width:300px; height:170px;}
-        					#i3{float:left;background-image:url('imagenes/Motorola2.jpg');width:300px; height:170px;}
+        					#i3{float:left;background-image:url('imagenes/Motorola2.jpg');width:300px; height:170px;margin-top:5px;}
 		
 		/*titulos*/
 		
@@ -108,7 +109,7 @@
 	
 				h1{font-family:'antipasto';
 				text-align:left;
-				color:#626262 }
+				color:#626262;margin-top:30px;}
 				h4{ text-align:center;
 				font-family:'verdana';}
 				p{text-align:justify; 
@@ -156,11 +157,11 @@
    					   width:440px; 
    					   height:250px;}
 				
-			#textapp{color:white; background-color:black; margin-top:200px;}
+			#textapp{color:white; background-color:black; margin-top:200px;font-family:'antipasto';}
 			
-			#textimg{color:white; background-color:black;font-size:18px;margin-top:306px;}
+			#textimg{color:white; background-color:black;font-size:20px;margin-top:306px;font-family:'antipasto';}
 			
-			#textimgM{ color:white; background-color:black;font-size:18px;margin-top:130px;}
+			#textimgM{ color:white; background-color:black;font-size:18px;margin-top:130px;font-family:'antipasto';}
 			
 			a{text-decoration:none; }
 			
@@ -173,15 +174,15 @@
 		#indice{width:940px;height:300px;}
 		
 		#flecha{float:left; }
-		#flechaimg{float:left; width:50px; height:50px;margin-top:15px;}
-		#letrai{float:left;width:150px; }
+		#flechaimg{float:left; width:50px; height:50px;margin-top:15px; margin-right:10px;}
+		#letrai{float:left;width:150px;}
+	
 		
-		
-			#ind1{float:left; width:210px;height:50px;margin-right:20px;}
+			#ind1{float:left; width:210px;height:50px;margin-right:10px;}
 			#ind2{float:left; width:210px;height:50px;margin-right:30px;}
-			#ind3{float:left; width:210px;height:50px;margin-right:20px;}
+			#ind3{float:left; width:210px;height:50px;margin-right:10px;}
 			#ind4{float:left; width:210px;height:50px;margin-right:10px;}
-			#ind5{float:left; width:210px;height:50px;margin-right:20px;}
+			#ind5{float:left; width:210px;height:50px;margin-right:10px;}
 			#ind6{float:left; width:210px;height:50px;margin-right:30px;}
 			#ind7{float:left; width:210px;height:50px;margin-right:100px;}
 					
@@ -199,6 +200,20 @@
 				font-size:16px;
 				color:white;}
 				
+		#indicetxt{font-family:'antipasto';
+				text-align:left;
+				color:#626262;
+				font-size:22px;margin-top:25px;}
+				
+		#division{float:left; width:920px;height:5px;background-color:#6F6F6F;margin-top:25px;}
+		
+		/*videos*/
+		#video1 {float:left; margin-right:20px;margin-left:50px;margin-top:20px;}
+		#video2 {float:left; margin-top:20px;}
+				
+		#videotxt {float:left;width:400px;50px;margin-top:0px;background-color:black;margin-left:50px;}
+		#videotxt2 {float:left; width:400px;height:75px;0px;background-color:black;margin-left:20px;}
+		#vtxt {color:white;margin-top:0px;text-align:center;}
 	</style>
 	
 	
@@ -212,16 +227,19 @@
   		<div id="logo"> <img src="imagenes/logo.jpg" width="460" height="150"></div>
 		<div id="PN">PhoneNews.com</div>
 	</div>	
-
-		<div id="b1"><img src="imagenes/menu-botones/home.png" width="100" height="40"></div>
-		<div id="b2"><img src="imagenes/menu-botones/samsung.png" width="100" height="40"></div>
-		<div id="b3"><img src="imagenes/menu-botones/apple.png" width="100" height="40"></div>
-		<div id="b4"><img src="imagenes/menu-botones/blackberry.png" width="100" height="40"></div>
-		<div id="b5"><img src="imagenes/menu-botones/nokia.png" width="100" height="40"></div>
-		<div id="b6"><img src="imagenes/menu-botones/htc.png" width="100" height="40"></div>
-		<div id="b7"><img src="imagenes/menu-botones/sony.png" width="100" height="40"></div>
-		<div id="b8"><img src="imagenes/menu-botones/Motorola.png" width="100" height="40"></div>
+ 		
+	<div id="imgmenu">
+		<div id="b1"><img src="imagenes/menu-botones/home.png" width="115" height="40"></div>
+		<div id="b2"><a href="PhoneNews-Samsung.html"><img src="imagenes/menu-botones/samsung.png" width="115" height="40"></a></div>
+		<div id="b3"><img src="imagenes/menu-botones/apple.png" width="115" height="40"></div>
+		<div id="b4"><img src="imagenes/menu-botones/blackberry.png" width="115" height="40"></div>
+		<div id="b5"><img src="imagenes/menu-botones/nokia.png" width="115" height="40"></div>
+		<div id="b6"><img src="imagenes/menu-botones/htc.png" width="115" height="40"></div>
+		<div id="b7"><img src="imagenes/menu-botones/sony.png" width="115" height="40"></div>
+		<div id="b8"><img src="imagenes/menu-botones/Motorola.png" width="115" height="40"></div>
 		
+	</div>
+	
 		<div id="imagenes">
 			<div id="i1"><div><a href="http://www.celularis.com/apple/significado-ios-8/?utm_source=celularis&utm_medium=social&utm_campaign=Perfiles_Sociales"><h1 id="textimg">iOS 8, las deudas resueltas de Apple.</h1></a></div></div>
 			<div id="medio">  
@@ -369,44 +387,56 @@
 			
 		<div id="text"><h1 id="txt">&nbsp&nbsp Videos</h1></div>	
 		
+		<div id="video1">
+			 <iframe width="400" height="243" src="http://www.youtube.com/embed/bmwC0CfW7-U" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<div id="video2">
+			  <iframe width="400" height="243" src="https://www.youtube.com/embed/-XseHZyvGtg" frameborder="0" allowfullscreen></iframe>
+		</div>
 		
-		<div id="indice">
-			 
+    		<div id="videotxt"> <h1 id="vtxt"> Presentacion de IOS 8 </h1></div>
+    		<div id="videotxt2"> <h1 id="vtxt"> Presentación del Samsung Galaxy S5 </h1></div>		
+    		<div id="indice">
+		 
+		<div id="division"></div>
+			
 			 <div id="ind1">
-			 	  <div id="letrai"><h1>HOME</h1></div>
+			 	  <div id="letrai"><h1 id="indicetxt">HOME</h1></div>
 			 	  <div id="flecha"><img src="imagenes/menu-botones/flecha.png" id="flechaimg"></div>
 			 </div>
 			 
 			 <div id="ind2">
-			 	  <div id="letrai"><h1>SAMSUNG</h1></div>
+			 	  <a href="PhoneNews-Samsung.html"><div id="letrai"><h1 id="indicetxt">SAMSUNG</h1></div>
 				  <div id="flecha"><img src="imagenes/menu-botones/flecha.png" id="flechaimg"></div>
+				  </a>
 			 </div>
 			 
 			 <div id="ind3">
-			 	  <div id="letrai"><h1>APPLE</h1></div>
+			 	  <div id="letrai"><h1 id="indicetxt">APPLE</h1></div>
 				  <div id="flecha"><img src="imagenes/menu-botones/flecha.png" id="flechaimg"></div>
 			 </div>
 			 
 			 <div id="ind4">
-        	 	  <div id="letrai"><h1>BLACKBERRY</h1></div>
+        	 	  <div id="letrai"><h1 id="indicetxt">BLACKBERRY</h1></div>
 				  <div id="flecha"><img src="imagenes/menu-botones/flecha.png" id="flechaimg"></div>
 			 </div>
 			 
 			 <div id="ind5">
-			 	  <div id="letrai"><h1>NOKIA</h1></div>
+			 	  <div id="letrai"><h1 id="indicetxt">NOKIA</h1></div>
 				  <div id="flecha"><img src="imagenes/menu-botones/flecha.png" id="flechaimg" ></div>
 			 </div>
 			
 			 <div id="ind6">
-			 	  <div id="letrai"><h1>HTC</h1></div>
+			 	  <div id="letrai"><h1 id="indicetxt">HTC</h1></div>
 				  <div id="flecha"><img src="imagenes/menu-botones/flecha.png" id="flechaimg"></div>
 			 </div>
 			 
 			 <div id="ind7">			   
-			 	  <div id="letrai"><h1>MOTOROLA</h1></div>
+			 	  <div id="letrai"><h1 id="indicetxt">MOTOROLA</h1></div>
 				  <div id="flecha"><img src="imagenes/menu-botones/flecha.png" id="flechaimg"></div>
 			 </div>
 			 
+	
 			 
 			 <div id="indice2"><h2 id="indtxt">Preguntas Frecuentes</h2>
 			 	  <h2 id="indtxt">Lo más buscado</h2>
